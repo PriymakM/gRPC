@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package proto;
+
+option go_package = "api/proto";
+
+service Adder{
+    rpc Add(AddRequest) returns (AddResponse);
+}
+
+message AddRequest{
+    double x = 1;
+    double a = 2;
+    double b = 3;
+    double c = 4;
+
+}
+
+message AddResponse{
+    double result = 1; 
+}
