@@ -43,7 +43,7 @@ func main() {
 
 	a := app.New()
 
-	w := a.NewWindow("Практична робота")
+	w := a.NewWindow("Maths")
 	w.Resize(fyne.NewSize(600, 500))
 
 	label_info := widget.NewLabel("Введіть значення x,a,b,c")
